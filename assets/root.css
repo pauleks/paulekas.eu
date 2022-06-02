@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Vollkorn;
+    src: url('/assets/Vollkorn-VariableFont_wght.ttf');
+}
+
+:root {
+    --red: #f74843;
+    --gray: #272727;
+}
+
+html {
+    color: white;
+    background: var(--gray);
+
+    scroll-behavior: smooth;
+    font-family: Vollkorn, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html, body, #__nuxt {
+    margin: 0;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+}
