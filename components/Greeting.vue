@@ -62,4 +62,18 @@ h1, h2, h3 {
 .hidden {
     opacity: 0;
 }
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 20vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+}
 </style>

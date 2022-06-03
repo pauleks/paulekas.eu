@@ -4,6 +4,7 @@
       <Warning />
       <Navbar />
       <NuxtPage/>
+      <Music />
     </NuxtLayout>
   </div>
 </template>

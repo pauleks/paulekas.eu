@@ -15,7 +15,7 @@ setInterval(() => {
                 <img src="~/assets/me.png" alt="My avatar">
             </div>
             <div class="column">
-                <p>I'm <b>Paulius</b> <span class="pronouns">(he/him)</span>, <b>{{ years }}</b> years old, a self-taught hobbyist coder and soon-to-be software engineering student from <b><span class="lithuania"><Link Href="https://en.wikipedia.org/wiki/Lithuania">Lithuania</Link>.</span></b></p>
+                <p>I'm <b>Paulius</b> <span class="pronouns">(he/him)</span>, <b class="years">{{ years }}</b> years old, a self-taught hobbyist coder and soon-to-be software engineering student from <b><span class="lithuania"><Link Href="https://en.wikipedia.org/wiki/Lithuania">Lithuania</Link></span></b>.</p>
                 <p>For my free time, I like to write various big and small <a href="/#projects">projects</a> using mostly Javascript and <Link Href="https://nodejs.org/">Node.js</Link> (I'm trying to master this language), but I also know basic C++ which I used at school and in various coding competitions and I'm also looking forward to learning <Link Href="https://www.rust-lang.org/">Rust</Link> in the future.</p>
                 <p>I'm a perfectionist, therefore I always try to make my creations the best ones.</p>
             </div>
@@ -62,5 +62,22 @@ setInterval(() => {
 
 #aboutme {
     font-size: 36px;
+}
+
+.years {
+    display: inline-block;
+    width: 95px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column > img {
+        max-width: 80%;
+        border: 12px dashed var(--red);
+    }
 }
 </style>
