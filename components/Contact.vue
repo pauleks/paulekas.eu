@@ -7,7 +7,7 @@
             <div class="column">
                 <p>The strongly suggested way to contact me is via my email <b>hi{at}paulekas.eu</b></p>
                 <p>You can also contact me via Discord <b>ghostwolf#5420</b> if you really need to. However, I might not always be available to respond, as well as I tend to reject random friend requests.</p>
-                <p><Link Href="https://github.com/TheOnlyGhostwolf">Also, feel free to check out my Github!</Link></p>
+                <p><NuxtLink to="https://github.com/TheOnlyGhostwolf">Also, feel free to check out my Github!</NuxtLink></p>
             </div>
         </div>
     </div>

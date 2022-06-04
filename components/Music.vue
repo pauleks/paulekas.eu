@@ -11,7 +11,7 @@ const { data: song } = useAsyncData('song', () => $fetch('/api/song'));
             <span></span>
         </div>
         <div v-else-if="song.notListening" style="opacity: 0.4">💤 I'm not listening to anything</div>
-        <div v-else>🎶 <Link :Href="song.url">{{ song.artist }} - {{ song.title }}</Link></div>
+        <div v-else>🎶 <NuxtLink :to="song.url">{{ song.artist }} - {{ song.title }}</NuxtLink></div>
     </div>
 </template>
 

@@ -25,12 +25,14 @@ description.value = names[0].description;
 </script>
 
 <template>
-    <div class="section">
-        <h2>👋 Hello and welcome! My name is</h2>
-        <h1 :class="{ hidden: hideText }">{{ title }}</h1>
+    <div>
+        <div class="section">
+            <h2>👋 Hello and welcome! My name is</h2>
+            <h1 :class="{ hidden: hideText }">{{ title }}</h1>
         <h3 :class="{ hidden: hideText }">{{ description }}</h3>
+            </div>
+        <Blob />
     </div>
-    <Blob />
 </template>
 
 <style scoped>

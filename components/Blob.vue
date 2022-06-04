@@ -10,14 +10,14 @@
 svg {
     position: absolute;
 
-    margin-left: -150px;
-    top: 180px;
+    margin-left: -125px;
+    top: 220px;
     left: 50%;
 
     z-index: 0;
 
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 
     animation: Rotation 30s infinite
 }

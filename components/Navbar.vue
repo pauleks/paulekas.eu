@@ -2,9 +2,9 @@
 let navigationOpened = ref(false);
 
 const routes = ref([
-    { route: '/#aboutme', label: 'About me', id: 'aboutme' },
-    { route: '/#projects', label: 'Projects', id: 'projects' },
-    { route: '/#contact', label: 'Contact me', id: 'contact' }
+    { route: '#aboutme', label: 'About me', id: 'aboutme' },
+    { route: '#projects', label: 'Projects', id: 'projects' },
+    { route: '#contact', label: 'Contact me', id: 'contact' }
 ])
 
 const openNav = () => navigationOpened.value = true;
@@ -14,13 +14,13 @@ const closeNav = () => navigationOpened.value = false;
 
 <template>
     <div class="navbar">
-        <a href="/#" class="logo">paulekas.eu</a>
+        <NuxtLink to="/" class="logo">paulekas.eu</NuxtLink>
         <div class="routes">
             <span v-for="selection in routes" :key="selection.key">
                 <a :href="selection.route">{{ selection.label }}</a>
             </span>
             <span>
-                <Link Href="https://github.com/TheOnlyGhostwolf"><GithubIcon class="github" /></Link>
+                <NuxtLink to="https://github.com/TheOnlyGhostwolf"><GithubIcon class="github" /></NuxtLink>
             </span>
         </div>
         <div class="navigationOverlayOpenButton" @click="openNav()">
@@ -38,7 +38,7 @@ const closeNav = () => navigationOpened.value = false;
                 <a :href="selection.route">{{ selection.label }}</a>
             </span>
             <span>
-                <Link Href="https://github.com/TheOnlyGhostwolf"><GithubIcon class="github" /></Link>
+                <NuxtLink to="https://github.com/TheOnlyGhostwolf"><GithubIcon class="github" /></NuxtLink>
             </span>
         </div>
     </div>
@@ -84,7 +84,7 @@ const closeNav = () => navigationOpened.value = false;
     left: 0;
     top: 0;
     background-color: var(--red);
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
 }
 
