@@ -1,18 +1,16 @@
 <script setup>
-const { data: song } = useAsyncData('song', () => $fetch('/api/song'));
+const { pending, data: song } = useLazyAsyncData('song', () => $fetch('/api/song'));
+
+watch(song, (newSong) => {
+    console.log(newSong);
+})
 </script>
 
 <template>
-    <div class="music">
-        <div v-if="!song" class="loading">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div v-else-if="song.notListening" style="opacity: 0.4">💤 I'm not listening to anything</div>
-        <div v-else>🎶 <NuxtLink :to="song.url">{{ song.artist }} - {{ song.title }}</NuxtLink></div>
-    </div>
+    <p v-if="!song?.notListening">
+        I'm currently listening to
+        <Link :href="song.url">{{ song.title }} by {{ song.artist }}</Link>
+    </p>
 </template>
 
 
@@ -20,7 +18,7 @@ const { data: song } = useAsyncData('song', () => $fetch('/api/song'));
 .music {
     height: 32px;
     width: 100%;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;

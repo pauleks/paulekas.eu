@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({
-  error: Object
+    error: Object
 })
 
 const handleError = () => clearError({ redirect: '/' })
@@ -14,15 +14,13 @@ const handleError = () => clearError({ redirect: '/' })
 </template>
 
 <style scoped>
-div > h1 {
+div>h1 {
     text-decoration: none !important;
     font-size: 15vh;
     margin: 0 0 32px 0;
 }
 
 .error {
-    background-color: var(--red);;
-
     height: 100%;
 
     display: flex;

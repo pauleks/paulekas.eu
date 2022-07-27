@@ -1,25 +1,34 @@
+/* Import local font assets/ReadexPro.ttf */
 @font-face {
-    font-family: Vollkorn;
-    src: url('/assets/Vollkorn-VariableFont_wght.ttf');
+    font-family: "ReadexPro";
+    src: url("assets/ReadexPro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("assets/PlayfairDisplay.ttf") format("truetype");
 }
 
 :root {
     --red: #f74843;
-    --gray: #272727;
+    --gray: #111111;
 }
 
 html {
     color: white;
     background: var(--gray);
 
+    font-family: ReadexPro, sans-serif;
     scroll-behavior: smooth;
-    font-family: Vollkorn, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-html, body, #__nuxt {
-    margin: 0;
-    height: 100%;
-    width: 100%;
+body {
+    margin: min(10vh, 10vw);
+}
+
+h1,
+h2 {
+    font-family: PlayfairDisplay, serif;
 }
 
 a {
