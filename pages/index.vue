@@ -7,8 +7,8 @@
         </div>
         <div class="links">
             <Link href="https://github.com/TheOnlyGhostwolf" class="github">Github</Link>
-            <Link href="linkedin" class="linkedin">LinkedIn</Link>
-            <Link href="email" class="email">Email me!</Link>
+            <Link href="https://www.linkedin.com/in/paulius-ge%C4%8Das-925193207" class="linkedin">LinkedIn</Link>
+            <Link href="mailto:hi@paulekas.eu" class="email">Email me!</Link>
         </div>
     </div>
     <div class="section">
@@ -33,7 +33,7 @@
         <div class="sectionContent">
             <Project name="Doodled" description="Currently under early stages of development. A revisioned drawing game with multiplayer support, leveling system, parties and more!" languages="ts,nextjs,react,prisma,mongodb,redis,express,nodejs,discord" />
             <Project name="Satan's Pepper" description="Weirdcore genre game jam game, with the full version coming soon. 200k views on Let's play's on Youtube!" languages="js,ps" link="https://theonlyghostwolf.itch.io/satans-pepper" />
-            <Project name="Caption It Jerma!" description="GIF caption generator bot, dedicated to a content creator Jerma985." languages="js,nodejs" link="https://www.reddit.com/r/jerma985/comments/uplzkd/i_made_a_jermathemed_caption_bot_that_adds_your/" />
+            <Project name="Caption It Jerma!" description="GIF caption generator bot, dedicated to a content creator Jerma985." languages="js,discord,nodejs" link="https://www.reddit.com/r/jerma985/comments/uplzkd/i_made_a_jermathemed_caption_bot_that_adds_your/" />
             <Project name="Snowflakes" description="Minigame bot, where you catch dropped snowflakes in channels." languages="js,discord,nodejs" link="https://github.com/TheOnlyGhostwolf/snowflakes" />
             <Project name="This website! :D" description="You're looking at it right now!" languages="js,vue,nuxtjs,css,nodejs" link="https://github.com/TheOnlyGhostwolf/PersonalWebsite" />
         </div>
