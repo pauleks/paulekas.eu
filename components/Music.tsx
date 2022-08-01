@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import ExtLink from "./ExtLink";
-import { SWRResponse } from "swr";
+import { SWRResponse, Fetcher } from "swr";
 
 interface SongData {
   title: string;
@@ -9,7 +9,7 @@ interface SongData {
   listening: boolean;
 }
 
-const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
+const fetcher = (...args: any[]) => fetch(args[0]).then((res) => res.json());
 
 const Music = () => {
   const { data, error }: SWRResponse<SongData, Error> = useSWR(
