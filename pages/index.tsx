@@ -79,8 +79,11 @@ const Home: NextPage = () => {
           <ExtLink href="https://ktug.lt/">
             Kaunas University of Technology Gymnasium
           </ExtLink>{" "}
-          graduate from Lithuania, planning to study software engineering in the
-          near future.
+          graduate &{" "}
+          <ExtLink href="https://en.ktu.edu/">
+            Kaunas University of Technology
+          </ExtLink>{" "}
+          Software Engineering (2022-2026) student from Lithuania.
         </p>
         <p>
           During my free time, I like to master programming by creating various
@@ -93,7 +96,10 @@ const Home: NextPage = () => {
           </strong>{" "}
           as my primary choice for web development.
         </p>
-        <p>I&#39;m available for hire! Feel free to contact me via email.</p>
+        <p>
+          I&#39;m available for hire and for paid internships! Feel free to
+          contact me via email.
+        </p>
       </Section>
 
       <Section sectionName="projects">
