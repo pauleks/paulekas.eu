@@ -1,3 +1,2 @@
 # Personal Website
-
-Uses Nuxt 3 Minimal Starter
+![](https://skillicons.dev/icons?i=ts,next,react,nodejs)

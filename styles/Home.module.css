@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .links {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.section {
+  margin: 32px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  width: max(min(600px, 100%), 70%);
+}
+.sectionName {
+  writing-mode: sideways-lr;
+  font-weight: 700;
+  font-size: large;
+}
+.sectionContent > p {
+  margin: 0;
+}
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.halfopacity {
+  opacity: 0.5;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.h3,
+.intro > * {
+  margin: 0;
+  transition: 300ms linear;
+}
+.intro > h1 {
+  font-size: 4rem;
+}
+.hidden {
+  opacity: 0 !important;
+}
+.halfopacity {
+  opacity: 0.5;
+}
