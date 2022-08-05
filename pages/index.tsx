@@ -1,14 +1,23 @@
-import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import ExtLink from "../components/ExtLink";
 import Section from "../components/Section";
 import Project from "../components/Project";
-import Music from "../components/Music";
 import { useState, useEffect } from "react";
+import { GetMusic } from "../lib/Music";
+import { SongInformation } from "../lib/Music.types";
 
-const Home: NextPage = () => {
+export async function getStaticProps() {
+  const music = await GetMusic();
+  return {
+    props: {
+      music,
+    },
+    revalidate: 20,
+  };
+}
+
+const Home = ({ music }: { music: SongInformation }) => {
   const [introductionPlace, setIntroductionPlace] = useState(0);
   const [currentTime, setCurrentTime] = useState("");
   const [animatedHeader, setAnimatedHeader] = useState("");
@@ -97,7 +106,7 @@ const Home: NextPage = () => {
           as my primary choice for web development.
         </p>
         <p>
-          I&#39;m available for hire and for paid internships! Feel free to
+          I&#39;m available for hire and/or paid internships! Feel free to
           contact me via email.
         </p>
       </Section>
@@ -174,7 +183,14 @@ const Home: NextPage = () => {
         </p>
       </Section>
 
-      <Music />
+      {music.listening && (
+        <p style={{ opacity: 0.5 }}>
+          I&#39;m currently listening to{" "}
+          <ExtLink href={music.url as string}>
+            {music.title} by {music.artist}
+          </ExtLink>
+        </p>
+      )}
     </>
   );
 };
