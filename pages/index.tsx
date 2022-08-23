@@ -75,7 +75,7 @@ const Home = ({ music }: { music: SongInformation }) => {
         </div>
         <div className={styles.links}>
           <ExtLink href="https://github.com/TheOnlyGhostwolf">Github</ExtLink>
-          <ExtLink href="https://www.linkedin.com/in/paulius-ge%C4%8Das-925193207">
+          <ExtLink href="https://lt.linkedin.com/in/paulius-g-925193207">
             LinkedIn
           </ExtLink>
           <ExtLink href="mailto:hi@paulekas.eu">Email me!</ExtLink>
@@ -170,7 +170,7 @@ const Home = ({ music }: { music: SongInformation }) => {
         </p>
         <p>
           Check out my{" "}
-          <ExtLink href="https://www.linkedin.com/in/paulius-ge%C4%8Das-925193207">
+          <ExtLink href="https://lt.linkedin.com/in/paulius-g-925193207">
             LinkedIn
           </ExtLink>{" "}
           and my{" "}
