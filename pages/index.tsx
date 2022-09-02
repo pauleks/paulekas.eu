@@ -105,10 +105,6 @@ const Home = ({ music }: { music: SongInformation }) => {
           </strong>{" "}
           as my primary choice for web development.
         </p>
-        <p>
-          I&#39;m available for hire and/or paid internships! Feel free to
-          contact me via email.
-        </p>
       </Section>
 
       <Section sectionName="projects">
