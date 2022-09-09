@@ -3,21 +3,10 @@ import styles from "../styles/Home.module.css";
 import ExtLink from "../components/ExtLink";
 import Section from "../components/Section";
 import Project from "../components/Project";
+import Music from "../components/Music";
 import { useState, useEffect } from "react";
-import { GetMusic } from "../lib/Music";
-import { SongInformation } from "../lib/Music.types";
 
-export async function getStaticProps() {
-  const music = await GetMusic();
-  return {
-    props: {
-      music,
-    },
-    revalidate: 20,
-  };
-}
-
-const Home = ({ music }: { music: SongInformation }) => {
+const Home = () => {
   const [introductionPlace, setIntroductionPlace] = useState(0);
   const [currentTime, setCurrentTime] = useState("");
   const [animatedHeader, setAnimatedHeader] = useState("");
@@ -179,14 +168,7 @@ const Home = ({ music }: { music: SongInformation }) => {
         </p>
       </Section>
 
-      {music.listening && (
-        <p style={{ opacity: 0.5 }}>
-          I&#39;m currently listening to{" "}
-          <ExtLink href={music.url as string}>
-            {music.title} by {music.artist}
-          </ExtLink>
-        </p>
-      )}
+      <Music />
     </>
   );
 };
