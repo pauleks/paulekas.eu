@@ -64,7 +64,7 @@ const Home = () => {
         </div>
         <div className={styles.links}>
           <ExtLink href="https://github.com/TheOnlyGhostwolf">Github</ExtLink>
-          <ExtLink href="https://lt.linkedin.com/in/paulius-g-925193207">
+          <ExtLink href="https://linkedin.com/in/pauliusgecas">
             LinkedIn
           </ExtLink>
           <ExtLink href="mailto:hi@paulekas.eu">Email me!</ExtLink>
@@ -155,7 +155,7 @@ const Home = () => {
         </p>
         <p>
           Check out my{" "}
-          <ExtLink href="https://lt.linkedin.com/in/paulius-g-925193207">
+          <ExtLink href="https://linkedin.com/in/pauliusgecas">
             LinkedIn
           </ExtLink>{" "}
           and my{" "}
