@@ -15,7 +15,7 @@ const Home = () => {
     { name: "ghostwolf", description: "My online alias" },
   ];
 
-  const timeOffset = 3;
+  const timeOffset = 2;
   const offsetDigits = (digit: number) =>
     digit.toLocaleString("en-US", {
       minimumIntegerDigits: 2,
