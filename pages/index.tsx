@@ -27,7 +27,7 @@ const Home = () => {
       const time = new Date(),
         hours =
           time.getUTCHours() + timeOffset < 24
-            ? time.getUTCHours() + 3
+            ? time.getUTCHours() + timeOffset
             : time.getUTCHours() - 24 + timeOffset,
         minutes = time.getUTCMinutes();
 
