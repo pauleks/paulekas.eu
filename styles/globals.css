@@ -9,13 +9,13 @@
 }
 
 :root {
-  --red: #f74843;
-  --gray: #111111;
+  --text: #111111;
+  --background: #dddddd;
 }
 
 html {
-  color: white;
-  background: var(--gray);
+  color: var(--text);
+  background: var(--background);
 
   font-family: ReadexPro, sans-serif;
   scroll-behavior: smooth;
@@ -31,5 +31,12 @@ h2 {
 }
 
 a {
-  color: inherit;
+  color: var(--text);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ffffff;
+    --background: #111111;
+  }
 }

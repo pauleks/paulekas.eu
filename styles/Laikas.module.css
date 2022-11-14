@@ -1,11 +1,11 @@
 .input {
-    border: 1px solid white;
+    border: 1px solid var(--text);
     border-radius: 4px;
     padding: 0.2em 0.6em;
     margin-top: 10px;
     background: transparent;
     transition: background-color 0.5s;
-    color: white;
+    color: var(--text);
     text-align: center;
     width: 50px;
     height: 40px;
@@ -13,7 +13,7 @@
 }
 .span {
     font-weight: 900;
-    text-decoration: underline wavy white;
+    text-decoration: underline wavy var(--text);
 }
 .p {
     text-align: center;

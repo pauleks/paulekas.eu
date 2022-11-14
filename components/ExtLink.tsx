@@ -12,10 +12,10 @@ const Link = ({ href, children }: LinkInterface) => {
 
       <style jsx>{`
         a {
-          text-decoration: underline white 1px solid;
+          text-decoration: underline var(--text) 1px solid;
         }
         a:hover {
-          text-decoration: underline white 1px dashed;
+          text-decoration: underline var(--text) 1px dashed;
         }
         span {
           width: 50%;

@@ -77,18 +77,18 @@ const Home = () => {
           <ExtLink href="https://ktug.lt/">
             Kaunas University of Technology Gymnasium
           </ExtLink>{" "}
-          graduate &{" "}
+          (2020 - 2022) graduate &{" "}
           <ExtLink href="https://en.ktu.edu/">
             Kaunas University of Technology
           </ExtLink>{" "}
           Software Engineering (2022-2026) student from Lithuania.
         </p>
         <p>
-          During my free time, I like to master programming by creating various
-          bigger and smaller projects (and you can find some of them below)! My
-          programming language of choice is <strong>JavaScript</strong>, I
+          During my free time, I like to master programming by creating various fun and
+          web-based projects! My
+          programming language of choice used to be <strong>JavaScript</strong>, I
           started using it in 2020 and learned it by initially creating Discord
-          bots, but nowadays, I&#39;m trying to switch over to{" "}
+          bots, but nowadays, I&#39;ve started using{" "}
           <strong>
             <ExtLink href="https://www.typescriptlang.org/">TypeScript</ExtLink>
           </strong>{" "}
@@ -96,46 +96,11 @@ const Home = () => {
         </p>
       </Section>
 
-      <Section sectionName="projects">
-        <Project
-          name="Doodled"
-          description="Currently under early stages of development. A revisioned drawing game with multiplayer support, leveling system, parties and more!"
-          languages={[
-            "ts",
-            "nextjs",
-            "react",
-            "prisma",
-            "mongodb",
-            "redis",
-            "express",
-            "nodejs",
-            "discord",
-          ]}
-        />
-        <Project
-          name="Satan's Pepper"
-          description="Weirdcore genre game jam game, with the full version coming soon. 200k views on Let's play's on Youtube!"
-          languages={["js", "ps"]}
-          href="https://theonlyghostwolf.itch.io/satans-pepper"
-        />
-        <Project
-          name="Caption It Jerma!"
-          description="GIF caption generator bot, dedicated to a content creator Jerma985."
-          languages={["js", "discord", "nodejs"]}
-          href="https://www.reddit.com/r/jerma985/comments/uplzkd/i_made_a_jermathemed_caption_bot_that_adds_your/"
-        />
-        <Project
-          name="Snowflakes"
-          description="Minigame bot, where you catch dropped snowflakes in channels."
-          languages={["js", "discord", "nodejs"]}
-          href="https://github.com/TheOnlyGhostwolf/snowflakes"
-        />
-        <Project
-          name="This website! :D"
-          description="You're looking at it right now!"
-          languages={["ts", "react", "nextjs", "nodejs"]}
-        />
-      </Section>
+      <div style={{ opacity: 0.4 }}>
+        <Section sectionName="projects">
+          <p>This section will come back soon!</p>
+        </Section>
+      </div>
 
       <Section sectionName="contact">
         <p>
@@ -147,11 +112,11 @@ const Home = () => {
               useGrouping: false,
             })}
           </b>
-          , therefore it is <b>{currentTime}</b> for me
+          , therefore it is <b>{currentTime}</b> for me.
         </p>
         <p>
-          Feel free to write me an email to{" "}
-          <ExtLink href="mailto:hi@paulekas.eu">hi@paulekas.eu</ExtLink>
+          Feel free to write me an email at{" "}
+          <ExtLink href="mailto:hi@paulekas.eu">hi@paulekas.eu</ExtLink>.
         </p>
         <p>
           Check out my{" "}
@@ -161,6 +126,7 @@ const Home = () => {
           and my{" "}
           <ExtLink href="https://github.com/TheOnlyGhostwolf">Github</ExtLink>{" "}
           too!
+        </p>
       </Section>
 
       <Music />

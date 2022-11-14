@@ -15,11 +15,11 @@ const Project = ({ name, description, languages, href }: ProjectInterface) => {
       <div className="project">
         <div className="name">
           <h4>{name}</h4>
-          <img
-            src={`https://skillicons.dev/icons?i=` + languages.join(",")}
-            alt="Languages used"
-          />
         </div>
+        <img
+          src={`https://skillicons.dev/icons?i=` + languages.join(",")}
+          alt="Languages used"
+        />
         <p>{description}</p>
         {href && (
           <ExtLink href={href}>
@@ -30,10 +30,13 @@ const Project = ({ name, description, languages, href }: ProjectInterface) => {
 
       <style jsx>{`
         .project {
-          border: 2px white solid;
+          border: 2px var(--text) solid;
           padding: 12px;
           border-radius: 8px;
           width: min(400px, 100%);
+        }
+        .project > * {
+          margin-bottom: 8px;
         }
         .name {
           display: flex;
