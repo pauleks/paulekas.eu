@@ -161,11 +161,6 @@ const Home = () => {
           and my{" "}
           <ExtLink href="https://github.com/TheOnlyGhostwolf">Github</ExtLink>{" "}
           too!
-        </p>
-        <p>
-          You can also contact me on Discord (but this is not preferred):
-          ghostwolf#5420
-        </p>
       </Section>
 
       <Music />
