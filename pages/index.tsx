@@ -73,34 +73,29 @@ const Home = () => {
 
       <Section sectionName="about me">
         <p>
-          I&#39;m an 19 years-old{" "}
+          I am a 19-year-old graduate of the{" "}
           <ExtLink href="https://ktug.lt/">
             Kaunas University of Technology Gymnasium
           </ExtLink>{" "}
-          (2020 - 2022) graduate &{" "}
+          (2020 - 2022) and a Software Engineering student at{" "}
           <ExtLink href="https://en.ktu.edu/">
             Kaunas University of Technology
           </ExtLink>{" "}
-          Software Engineering (2022-2026) student from Lithuania.
+          (2022-2026) from Lithuania.
         </p>
         <p>
-          During my free time, I like to master programming by creating various fun and
-          web-based projects! My
-          programming language of choice used to be <strong>JavaScript</strong>, I
-          started using it in 2020 and learned it by initially creating Discord
-          bots, but nowadays, I&#39;ve started using{" "}
-          <strong>
-            <ExtLink href="https://www.typescriptlang.org/">TypeScript</ExtLink>
-          </strong>{" "}
-          as my primary choice for web development.
+          I began learning coding in 5th grade when I took HTML and CSS beginner classes.{" "}
+          I then stopped until 7th grade when I started taking basic C++ lessons and using{" "}
+          it in competitive programming competitions in my country.
         </p>
+        <p>
+          In 2020, I taught myself JavaScript, which has been my language of choice for{" "}
+          projects until recently when I switched to TypeScript.
+        </p>
+        <p>
+          I am now learning web development frameworks like React and Next.js, but my{" "}
+          university course and interests may change things. I am also working on a few projects that I hope to share soon!
       </Section>
-
-      <div style={{ opacity: 0.4 }}>
-        <Section sectionName="projects">
-          <p>This section will come back soon!</p>
-        </Section>
-      </div>
 
       <Section sectionName="contact">
         <p>
