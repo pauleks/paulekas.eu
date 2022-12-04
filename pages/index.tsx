@@ -73,7 +73,7 @@ const Home = () => {
 
       <Section sectionName="about me">
         <p>
-          I&#39;m an 18 years-old{" "}
+          I&#39;m an 19 years-old{" "}
           <ExtLink href="https://ktug.lt/">
             Kaunas University of Technology Gymnasium
           </ExtLink>{" "}
