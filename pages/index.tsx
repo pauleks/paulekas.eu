@@ -95,6 +95,7 @@ const Home = () => {
         <p>
           I am now learning web development frameworks like React and Next.js, but my{" "}
           university course and interests may change things. I am also working on a few projects that I hope to share soon!
+        </p>
       </Section>
 
       <Section sectionName="contact">
