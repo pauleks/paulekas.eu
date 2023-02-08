@@ -23,6 +23,7 @@ html {
 
 body {
   margin: min(10vh, 10vw);
+  min-height: calc(100vh - min(10vh, 10vw) * 2);
 }
 
 h1,
@@ -32,6 +33,10 @@ h2 {
 
 a {
   color: var(--text);
+}
+
+a:hover {
+  text-decoration: 1px underline wavy var(--text);
 }
 
 @media (prefers-color-scheme: dark) {

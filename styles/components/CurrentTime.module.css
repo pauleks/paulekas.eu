@@ -1,0 +1,11 @@
+.timeText {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    transition: 300ms linear;
+}
+
+.blur {
+    filter: blur(5px);
+    opacity: 0;
+}

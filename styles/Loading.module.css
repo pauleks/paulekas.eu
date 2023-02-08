@@ -1,0 +1,55 @@
+.base {
+    width: 100%;
+    height: calc(100vh - min(10vh, 10vw) * 2 - 6px);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    transform: translateZ(0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base::after {
+    background: var(--background);
+    padding: 3px;
+    background-clip: content-box;
+    border-radius: 1rem;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+}
+
+.base::before,
+.base::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.base::before {
+    animation: rotation 1s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--background),
+        var(--background),
+        var(--background),
+        var(--text),
+        var(--background)
+    );
+    width: 200%;
+    height: 100%;
+}
+
+.base > p {
+    z-index: 2;
+}
+
+@keyframes rotation {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}

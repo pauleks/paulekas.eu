@@ -1,7 +1,8 @@
+'use client'
+
 import useSWR from "swr";
-import ExtLink from "./ExtLink";
 import { SWRResponse } from "swr";
-import { SongInformation } from "../lib/Music.types";
+import { SongInformation } from "../../lib/Music.types";
 
 const fetcher = (...args: any[]) => fetch(args[0]).then((res) => res.json());
 
@@ -16,9 +17,9 @@ const Music = () => {
     return (
         <p>
             I&#39;m currently listening to{" "}
-            <ExtLink href={data.url as string}>
+            <a href={data.url as string} target="_blank" rel="noopener noreferrer">
                 {data.title} by {data.artist}
-            </ExtLink>
+            </a>
             <style jsx>{`
         p {
           opacity: 0.5;
