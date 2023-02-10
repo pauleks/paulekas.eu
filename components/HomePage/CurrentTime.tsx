@@ -29,5 +29,5 @@ export default function CurrentTime() {
     });
 
 
-    return <b className={`${styles.timeText} ${(currentTime == "" ? styles.blur : "")}`}>{currentTime == "" ? "00:00" : currentTime}</b>
+    return <b className={`${styles.timeText} ${(currentTime == "" ? styles.blur : "")}`}>{currentTime}</b>
 }
