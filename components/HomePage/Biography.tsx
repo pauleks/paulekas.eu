@@ -17,7 +17,7 @@ export default function Bio() {
                     </h2>
                 </div>
                 <div className={styles.links}>
-                    <a href="https://github.com/TheOnlyGhostwolf" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="https://github.com/pauleks" target="_blank" rel="noopener noreferrer">Github</a>
                     <a href="https://linkedin.com/in/pauliusgecas" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="mailto:hi@paulekas.eu" target="_blank" rel="noopener noreferrer">Email me!</a>
                 </div>
@@ -63,7 +63,7 @@ export default function Bio() {
                     Check out my{" "}
                     <a href="https://linkedin.com/in/pauliusgecas" target="_blank" rel="noopener noreferrer">LinkedIn</a>{" "}
                     and my{" "}
-                    <a href="https://github.com/TheOnlyGhostwolf" target="_blank" rel="noopener noreferrer">Github</a>{" "}
+                    <a href="https://github.com/pauleks" target="_blank" rel="noopener noreferrer">Github</a>{" "}
                     too!
                 </p>
             </Section>
