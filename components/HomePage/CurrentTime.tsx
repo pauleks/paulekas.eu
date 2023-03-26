@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import styles from '@css/components/CurrentTime.module.css'
 
 export default function CurrentTime() {
-    const timeOffset = 2;
+    const timeOffset = 3; // Summer time
 
     const [currentTime, setCurrentTime] = useState("");
 
