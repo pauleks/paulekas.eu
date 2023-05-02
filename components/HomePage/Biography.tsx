@@ -2,6 +2,7 @@ import styles from "@css/Home.module.css";
 import Link from "next/link";
 import CurrentTime from "./CurrentTime";
 import Section from "./Section";
+import Image from 'next/image'
 
 export default function Bio() {
     return (
@@ -9,12 +10,16 @@ export default function Bio() {
             <div className={styles.header}>
                 <div className={styles.intro}>
                     <p>Hey there! I{`'`}m</p>
-                    <h1>
-                        Paulius
-                    </h1>
-                    <h2 style={{ opacity: 0.5 }}>
-                        a software engineering student
-                    </h2>
+                    <div className={styles.flexLayout}>
+                        <Image src='/images/typing.gif' alt='typing' width={156} height={148} />
+                        <div>
+                            <h1>
+                                Paulius
+                            </h1>
+                            <h2 style={{ opacity: 0.5 }}>
+                                a software engineering student
+                            </h2></div>
+                    </div>
                 </div>
                 <div className={styles.links}>
                     <a href="https://github.com/pauleks" target="_blank" rel="noopener noreferrer">Github</a>
