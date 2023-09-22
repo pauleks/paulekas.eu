@@ -3,31 +3,25 @@ import { useEffect, useState } from "react"
 import styles from '@css/components/CurrentTime.module.css'
 
 export default function CurrentTime() {
-    const timeOffset = 3; // Summer time
-
-    const [currentTime, setCurrentTime] = useState("");
-
-    function offsetDigits(digit: number) {
-        return digit.toLocaleString("en-US", {
-            minimumIntegerDigits: 2,
-            useGrouping: false,
-        });
-    }
+    const [time, setTime] = useState(new Date());
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const time = new Date(),
-                hours =
-                    time.getUTCHours() + timeOffset < 24
-                        ? time.getUTCHours() + timeOffset
-                        : time.getUTCHours() - 24 + timeOffset,
-                minutes = time.getUTCMinutes();
-
-            setCurrentTime(`${offsetDigits(hours)}:${offsetDigits(minutes)}`);
+            setTime(new Date());
         }, 1000);
+
         return () => clearInterval(interval);
-    });
+    }, []);
 
+    const getCurrentTime = () => {
+        return time.toLocaleString(
+            'en-US',
+            {
+                timeZone: 'Europe/Vilnius',
+                hour12: false,
+                timeStyle: "medium"
+            });
+    };
 
-    return <b className={`${styles.timeText} ${(currentTime == "" ? styles.blur : "")}`}>{currentTime}</b>
+    return <b>{getCurrentTime()}</b>
 }
