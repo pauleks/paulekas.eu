@@ -26,7 +26,6 @@ export default async function BlogPosts() {
 
     return (
         <>
-            {/* @ts-expect-error Server Component */}
             {posts}
         </>
     );
