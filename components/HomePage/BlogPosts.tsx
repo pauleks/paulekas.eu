@@ -1,9 +1,9 @@
 import fs from 'fs/promises'
 import Link from "next/link";
-import {sort} from "next/dist/build/webpack/loaders/css-loader/src/utils";
+import {join} from "path";
 
 async function GetBlogPosts() {
-    const mdFiles = await fs.readdir('./blog');
+    const mdFiles = await fs.readdir(join(process.cwd(), 'blog'));
     const entries = [];
     for (const fileName of mdFiles) {
         if (!fileName.match(/\d{6}-\D+\.md/)) continue;

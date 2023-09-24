@@ -2,15 +2,16 @@ import fs from 'fs/promises';
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import {notFound} from "next/navigation";
+import { join } from 'path'
 
 async function fetchPost(id: string){
-    const mdFiles = await fs.readdir('./blog');
+    const mdFiles = await fs.readdir(join(process.cwd(), 'blog'));
     const entries = new Map();
     for (const fileName of mdFiles) {
         if (!fileName.matchAll(/\d{6}-\D+\.md/g)) continue;
         const date = `20${fileName.slice(0, 2)}-${fileName.slice(2, 4)}-${fileName.slice(4, 6)}`
         const name = fileName.slice(7, -3);
-        const content = (await fs.readFile(`./blog/${fileName}`)).toString();
+        const content = (await fs.readFile(join(process.cwd(), 'blog', fileName))).toString();
         const key = name.toLowerCase().replaceAll(" ", "-");
         entries.set(key, { date, name, content });
     }
