@@ -27,7 +27,8 @@ export default function Bio() {
                     <a href="https://github.com/pauleks" target="_blank" rel="noopener noreferrer">Github</a>
                     <a href="https://linkedin.com/in/pauliusgecas" target="_blank"
                        rel="noopener noreferrer">LinkedIn</a>
-                    <a href="mailto:hi@paulekas.eu" target="_blank" rel="noopener noreferrer">Email me!</a>
+                    <a href="mailto:hi@paulekas.eu" target="_blank">Email me!</a>
+                    <a href="https://drive.google.com/file/d/1GSG6eB7aU1akS3UZ9reaEVsklDG5fdWD/view" target="_blank" rel="noopener noreferrer">Resume</a>
                 </div>
             </div>
 
