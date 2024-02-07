@@ -34,7 +34,7 @@ export default function Bio() {
 
             <Section sectionName="about me">
                 <p>
-                    I am a 19-year-old graduate of the{" "}
+                    I am a 20-years-old graduate of the{" "}
                     <a href="https://ktug.lt/" target="_blank" rel="noopener noreferrer">
                         Kaunas University of Technology Gymnasium
                     </a>{" "}
