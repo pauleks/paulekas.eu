@@ -6,7 +6,7 @@ import Image from 'next/image'
 import BlogPosts from "@components/HomePage/BlogPosts";
 
 // chat geepeetee
-const calculateAge = (birthday) => {
+const calculateAge = (birthday: string) => {
   const today = new Date();
   const birthDate = new Date(birthday);
   let age = today.getFullYear() - birthDate.getFullYear();
