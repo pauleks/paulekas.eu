@@ -5,7 +5,22 @@ import Section from "./Section";
 import Image from 'next/image'
 import BlogPosts from "@components/HomePage/BlogPosts";
 
+// chat geepeetee
+const calculateAge = (birthday) => {
+  const today = new Date();
+  const birthDate = new Date(birthday);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+};
+
 export default function Bio() {
+    const birthday = "2003-11-30";
+    const age = calculateAge(birthday);
+    
     // @ts-ignore
     return (
         <>
@@ -34,15 +49,15 @@ export default function Bio() {
 
             <Section sectionName="about me">
                 <p>
-                    I am a 20-years-old graduate of the{" "}
+                    I am a {age}-years-old graduate of the{" "}
                     <a href="https://ktug.lt/" target="_blank" rel="noopener noreferrer">
                         Kaunas University of Technology Gymnasium
                     </a>{" "}
-                    (2020 - 2022) and a Software Engineering student at{" "}
+                    and a Software Engineering student at{" "}
                     <a href="https://en.ktu.edu/" target="_blank" rel="noopener noreferrer">
                         Kaunas University of Technology
                     </a>{" "}
-                    (2022-2026) from Lithuania.
+                    from Lithuania.
                 </p>
                 <p>
                     I began learning coding in 5th grade when I took HTML and CSS beginner classes.{" "}
@@ -53,11 +68,18 @@ export default function Bio() {
                     In 2020, I taught myself JavaScript, which has been my language of choice for{" "}
                     projects until recently when I switched to TypeScript.
                 </p>
+                <p>At this moment, I sell vapes at <a href="https://royalsmoke.lt/" target="_blank">RoyalSmoke</a></p>
+            </Section>
+
+            <Section sectionName="projects">
                 <p>
-                    I am now learning web development frameworks like React and Next.js, but my{" "}
-                    university course and interests may change things. I am also quite interested in game development
-                    too, but this is not something that I take seriously yet.{" "}
-                    In the meantime, I{`'`}m working on a few projects that I hope to share soon!
+                    Some of my projects include:
+                    <ul>
+                        <li>an e-commerce store - <a href="https://kirakirafox.eu/" target="_blank">kirakirafox.eu</a></li>
+                        <li>a little web game called <a href="https://theonlyghostwolf.itch.io/satans-pepper" target="_blank">Satan's Pepper</a> - as featured on <a href="https://www.youtube.com/watch?v=HQtk2Jey1_M" target="_blank">let's player's ManlyBadassHero channel</a></li>
+                        <li>Discord bots! <a href="https://github.com/pauleks/jermacaption" target="_blank">Caption It Jerma!</a>, an on-request GIF generation tool, dedicated to an internet personality Jerma985 that also utilizes ffmpeg, and <a href="https://github.com/pauleks/uwutranslator" target="_blank">uwutranslator</a>, the latter being my very first JavaScript project and also running on serverless platform</li>
+                        <li>and all of my other projects can be found on <a href="https://github.com/pauleks" target="_blank" rel="noopener noreferrer">my main GitHub profile</a> and <a href="https://github.com/pauleksarchive" target="_blank" rel="noopener noreferrer">my archived projects org</a></li>
+                    </ul>
                 </p>
             </Section>
 
