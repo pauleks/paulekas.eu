@@ -68,7 +68,7 @@ export default function Bio() {
                     In 2020, I taught myself JavaScript, which has been my language of choice for{" "}
                     projects until recently when I switched to TypeScript.
                 </p>
-                <p>At this moment, I sell vapes at <a href="https://royalsmoke.lt/" target="_blank">RoyalSmoke</a></p>
+                <p>At this moment, I sell vapes at <a href="https://royalsmoke.lt/" target="_blank">RoyalSmoke</a> (lol)</p>
             </Section>
 
             <Section sectionName="projects">
@@ -76,7 +76,7 @@ export default function Bio() {
                     Some of my projects include:
                     <ul>
                         <li>an e-commerce store - <a href="https://kirakirafox.eu/" target="_blank">kirakirafox.eu</a></li>
-                        <li>a little web game called <a href="https://theonlyghostwolf.itch.io/satans-pepper" target="_blank">Satan's Pepper</a> - as featured on <a href="https://www.youtube.com/watch?v=HQtk2Jey1_M" target="_blank">let's player's ManlyBadassHero channel</a></li>
+                        <li>a little web game called <a href="https://theonlyghostwolf.itch.io/satans-pepper" target="_blank">Satan{`'`}s Pepper</a> - as featured on <a href="https://www.youtube.com/watch?v=HQtk2Jey1_M" target="_blank">let{`'`}s player{`'`}s ManlyBadassHero channel</a></li>
                         <li>Discord bots! <a href="https://github.com/pauleks/jermacaption" target="_blank">Caption It Jerma!</a>, an on-request GIF generation tool, dedicated to an internet personality Jerma985 that also utilizes ffmpeg, and <a href="https://github.com/pauleks/uwutranslator" target="_blank">uwutranslator</a>, the latter being my very first JavaScript project and also running on serverless platform</li>
                         <li>and all of my other projects can be found on <a href="https://github.com/pauleks" target="_blank" rel="noopener noreferrer">my main GitHub profile</a> and <a href="https://github.com/pauleksarchive" target="_blank" rel="noopener noreferrer">my archived projects org</a></li>
                     </ul>
