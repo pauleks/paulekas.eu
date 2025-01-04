@@ -11,6 +11,14 @@ const nextConfig = {
       },
     ]
   },
+  rewrites: async () => {
+    return [
+      {
+        source: "/captionitjerma/:slug",
+        destination: "/captionitjerma/:slug.html",
+      }
+    ]
+  },
   experimental: {
     appDir: true,
   }
