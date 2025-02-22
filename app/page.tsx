@@ -7,7 +7,7 @@ export const metadata = {
     // Dumb verification workaround for Mastodon
     icons: {
         other: [
-            { rel: 'me', url: 'https://https://mastodon.gamedev.place/@paulekas' }
+            { rel: 'me', url: 'https://mastodon.gamedev.place/@paulekas' }
         ]
     }
 }
