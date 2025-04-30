@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCaption It Jerma! GIFs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        li:hover {
+            background-color: #f0f0f0;
+        }
+        .gif-container {
+            margin-top: 20px;
+        }
+        .gif-container img {
+            height: 256px;
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hover over the entry to preview the GIF.</p>
+    <p><a href="https://discord.com/invite/Z95KwXVGEu" target="_blank">Suggest new GIFs here.</a></p>
+
+    <div class="gif-container" id="gif-container"></div>
+
+    <script>
+        async function fetchFiles() {
+            const repoOwner = 'pauleks';
+            const repoName = 'jermacaption';
+            const path = 'assets';
+            const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${path}`;
+
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                displayFiles(data);
+            } catch (error) {
+                console.error('Error fetching files:', error);
+            }
+        }
+
+        function displayFiles(files) {
+            const body = document.body;
+            const ul = document.createElement('ul');
+
+            files.forEach(file => {
+                if (file.name.endsWith('.gif')) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = file.name.replace('.gif', '');
+                    listItem.addEventListener('mouseover', () => loadGif(file.download_url));
+                    ul.appendChild(listItem);
+                }
+            });
+
+            body.appendChild(ul);
+        }
+
+        function loadGif(url) {
+            const gifContainer = document.getElementById('gif-container');
+            gifContainer.innerHTML = `<img src="${url}" alt="GIF">`;
+        }
+
+        // Fetch files when the page loads
+        window.onload = fetchFiles;
+    </script>
+</body>
+</html>
