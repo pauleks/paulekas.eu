@@ -26,16 +26,13 @@ export default function Bio() {
         <>
             <div className={styles.header}>
                 <div className={styles.intro}>
-                    <p>Hey there! I{`'`}m</p>
                     <div className={styles.flexLayout}>
                         <Image src='/images/typing.gif' alt='typing' width={156} height={148}/>
                         <div>
                             <h1>
                                 Paulius
                             </h1>
-                            <h2 style={{opacity: 0.5}}>
-                                a software engineering student
-                            </h2></div>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.links}>
@@ -43,7 +40,6 @@ export default function Bio() {
                     <a href="https://linkedin.com/in/pauliusgecas" target="_blank"
                        rel="noopener noreferrer">LinkedIn</a>
                     <a href="mailto:hi@paulekas.eu" target="_blank">Email me!</a>
-                    <a href="https://drive.google.com/file/d/1CHbcLHloE26uA4geXl0_G9VKJmoOLdw9/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
                 </div>
             </div>
 
@@ -53,11 +49,11 @@ export default function Bio() {
                     <a href="https://ktug.lt/" target="_blank" rel="noopener noreferrer">
                         Kaunas University of Technology Gymnasium
                     </a>{" "}
-                    and a Software Engineering student at{" "}
+                    and a former Software Engineering student at{" "}
                     <a href="https://en.ktu.edu/" target="_blank" rel="noopener noreferrer">
                         Kaunas University of Technology
                     </a>{" "}
-                    from Lithuania.
+                    (unfinished degree) from Lithuania.
                 </p>
                 <p>
                     I began learning coding in 5th grade when I took HTML and CSS beginner classes.{" "}
@@ -68,7 +64,6 @@ export default function Bio() {
                     In 2020, I taught myself JavaScript, which has been my language of choice for{" "}
                     projects until recently when I switched to TypeScript.
                 </p>
-                <p>At this moment, I sell vapes at <a href="https://royalsmoke.lt/" target="_blank">RoyalSmoke</a> (lol)</p>
             </Section>
 
             <Section sectionName="projects">
@@ -81,10 +76,6 @@ export default function Bio() {
                         <li>and all of my other projects can be found on <a href="https://github.com/pauleks" target="_blank" rel="noopener noreferrer">my main GitHub profile</a> and <a href="https://github.com/pauleksarchive" target="_blank" rel="noopener noreferrer">my archived projects org</a></li>
                     </ul>
                 </p>
-            </Section>
-
-            <Section sectionName="blog">
-                <BlogPosts />
             </Section>
 
             <Section sectionName="contact">
@@ -105,7 +96,5 @@ export default function Bio() {
                 </p>
             </Section>
         </>
-
-
     );
 }
